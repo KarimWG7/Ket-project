@@ -1,0 +1,116 @@
+:root {
+  --main-color: #00e1ff;
+  --bg-dark: #252726;
+  --text-shade: #929ba0;
+  --h3-color: #3f4244;
+}
+
+header {
+  height: 80px;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 2.2rem;
+}
+
+header ul li {
+  padding: 3rem 0;
+}
+nav ul li.active {
+  color: var(--main-color);
+}
+nav ul li.active a {
+  color: var(--main-color);
+}
+/* End of Header  */
+
+section.hero {
+  height: calc(100vh - 80px);
+  position: relative;
+  background-color: var(--bg-dark);
+}
+section.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.2;
+  display: block;
+}
+section.hero .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+section.hero h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 100;
+}
+button.cta-btn {
+  transition: all 0.5s ease;
+}
+button.cta-btn:hover {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+
+/*   End of Hero sectoin   */
+
+section.services {
+  margin: 4rem auto;
+  padding: 2rem 2rem;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 5.6rem;
+  color: var(--main-color);
+  width: 5.6rem;
+  height: 5.6rem;
+}
+section .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+  flex-basis: calc(25% - 8rem);
+}
+
+section.services h3 {
+  font-size: 2rem;
+  position: relative;
+}
+
+section.services h3::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.2rem;
+  width: 80%;
+  background-color: var(--main-color);
+}
+section .service p {
+  font-size: 1.6rem;
+  color: var(--text-shade);
+  text-align: center;
+}

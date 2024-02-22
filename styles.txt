@@ -1,0 +1,24 @@
+// colors
+main color:- #00e1ff
+bg-dark:- #252726
+font-shade:- #929ba0
+h3-color:- #3f4244
+timeline-sub-title-color : #c8cdce
+facebook-color:- #36609e
+twitter-color:#2ca9e1
+instagram-color:- #d6249f
+linkedin-color:- #007bb6
+
+
+// widhts
+container-width:- 1170px
+icon-width:- 56px
+
+
+// fonts
+font-family:- Raleway
+
+hero-font:- 60px
+h2-font:- 40px
+h3-font:- 17px
+font-shade-size:- 13px
